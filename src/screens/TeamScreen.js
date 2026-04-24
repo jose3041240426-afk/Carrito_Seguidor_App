@@ -92,10 +92,7 @@ const TeamScreen = ({ navigation }) => {
                     <Text style={styles.memberName}>{member.name}</Text>
                     <Text style={styles.memberRole}>{member.role}</Text>
                   </View>
-                  <View style={styles.igBadge}>
-                    <Ionicons name="logo-instagram" size={14} color="#E1306C" />
-                    <Text style={styles.igText}>{member.ig}</Text>
-                  </View>
+
                 </Animated.View>
               );
             })}

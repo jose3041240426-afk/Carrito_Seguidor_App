@@ -26,16 +26,8 @@ const CreditsScreen = ({ navigation }) => {
             <Text style={styles.label}>Materia</Text>
             <Text style={styles.value}>Desarrollo de aplicaciones moviles</Text>
 
-            <View style={styles.row}>
-              <View style={styles.column}>
-                <Text style={styles.label}>Grupo</Text>
-                <Text style={styles.value}>5° A TI</Text>
-              </View>
-              <View style={styles.column}>
-                <Text style={styles.label}>Cuatrimestre</Text>
-                <Text style={styles.value}>Mayo-Agosto 2026</Text>
-              </View>
-            </View>
+            <Text style={styles.label}>Grupo</Text>
+            <Text style={styles.value}>5° A TI</Text>
 
             <Text style={styles.label}>Docente</Text>
             <Text style={styles.value}>Ing. Ana Laura Lara Chairez</Text>
