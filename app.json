@@ -4,11 +4,11 @@
     "slug": "Carrito",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/tutorial/logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/tutorial/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,13 +17,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/tutorial/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.manuelgs.Carrito"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/tutorial/logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f19603c6-2102-461a-aa8e-bfc7ec002c2c"
+      }
     }
   }
 }

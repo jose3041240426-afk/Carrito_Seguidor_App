@@ -22,7 +22,7 @@ const STEPS = [
     id: '1',
     title: '1. Ensamblaje Mecánico',
     content: 'Primero se debe armar toda la estructura física del robot:\n\n• Fija la base del chasis (acrílico, MDF o 3D).\n• Coloca los motores reductores a los lados.\n• Monta las llantas en los ejes.\n• Instala la rueda loca (caster) para estabilidad.\n• Fija el porta pilas y el interruptor.\n• Instala la base de sensores al frente, cerca del suelo.',
-    image: require('../../assets/tutorial/paso1.png'),
+    image: require('../../assets/tutorial/paso1.webp'),
     color: '#4158D0',
   },
   {
@@ -32,7 +32,7 @@ const STEPS = [
     warning: 'Este GND debe compartirse con el ESP32 (tierra común).',
     images: [
       require('../../assets/tutorial/portapilas.webp'),
-      require('../../assets/tutorial/baterias 18650.jpg'),
+      require('../../assets/tutorial/baterias_18650.jpg'),
     ],
     color: '#C850C0',
   },
@@ -40,7 +40,7 @@ const STEPS = [
     id: '3',
     title: '3. Motores al Puente H',
     content: 'Cada motor va a una salida del puente H:\n\nMotor A:\n• Positivo → OUT1\n• Negativo → OUT2\n\nMotor B:\n• Positivo → OUT4\n• Negativo → OUT3',
-    image: require('../../assets/tutorial/step2.png'),
+    image: require('../../assets/tutorial/step2.jpg'),
     color: '#FFCC70',
   },
   {
@@ -76,7 +76,7 @@ const STEPS = [
     id: '8',
     title: '8. Prueba de Motores',
     content: 'Haz un código simple para probar:\n\n• Avanzar\n• Retroceder\n• Girar izquierda/derecha\n\nEsto confirma que el puente H funciona correctamente.',
-    video: require('../../assets/tutorial/prueba inicial.mp4'),
+    video: require('../../assets/tutorial/prueba_inicial.mp4'),
     color: '#FFAA00',
   },
   {
@@ -90,7 +90,7 @@ const STEPS = [
     id: '10',
     title: '10. Integración Final',
     content: 'Aplica la lógica final:\n\n• Ambos detectan línea → Avanzar\n• Izquierdo detecta → Girar izquierda\n• Derecho detecta → Girar derecha',
-    image: require('../../assets/tutorial/integracion final.jpeg'),
+    image: require('../../assets/tutorial/integracion_final.jpeg'),
     color: '#21D4FD',
   },
 ];

@@ -10,10 +10,10 @@ import Typewriter from '../components/Typewriter';
 const { width, height: windowHeight } = Dimensions.get('window');
 
 const EVIDENCE = [
-  { title: 'Chasis Base', image: require('../../assets/tutorial/paso1.png') },
+  { title: 'Chasis Base', image: require('../../assets/tutorial/paso1.webp') },
   { title: 'Conexión de Motores', image: require('../../assets/tutorial/prueba1.jpeg') },
   { title: 'Sensores Infrarrojos', image: require('../../assets/tutorial/calibracion.jpeg') },
-  { title: 'Estructura Final', image: require('../../assets/tutorial/integracion final.jpeg') },
+  { title: 'Estructura Final', image: require('../../assets/tutorial/integracion_final.jpeg') },
 ];
 
 const AnimatedGradient = Animated.createAnimatedComponent(LinearGradient);
