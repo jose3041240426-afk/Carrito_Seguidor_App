@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Image,
   Animated,
+  ScrollView,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -173,7 +174,7 @@ const StepCard = React.memo(({ item }) => {
         <StepMedia image={item.image} images={item.images} video={item.video} />
       </View>
       
-      <View style={styles.textContainer}>
+      <ScrollView style={styles.textContainer} contentContainerStyle={styles.textContentContainer} showsVerticalScrollIndicator={false}>
         <Text style={styles.stepTitle}>{item.title}</Text>
         <Text style={styles.stepContent}>{item.content}</Text>
         
@@ -183,7 +184,7 @@ const StepCard = React.memo(({ item }) => {
             <Text style={styles.warningText}>{item.warning}</Text>
           </View>
         )}
-      </View>
+      </ScrollView>
     </View>
   );
 });
@@ -425,7 +426,7 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
   },
   imageContainer: {
-    height: height * 0.35,
+    height: height * 0.28,
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 20,
@@ -457,7 +458,10 @@ const styles = StyleSheet.create({
   textContainer: {
     flex: 1,
     backgroundColor: '#f8f9fa',
+  },
+  textContentContainer: {
     padding: 25,
+    paddingBottom: 40,
   },
   stepTitle: {
     fontSize: 24,

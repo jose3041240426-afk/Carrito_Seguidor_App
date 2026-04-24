@@ -96,10 +96,6 @@ const ZoomableImage = ({ item }) => {
         activeOpacity={0.9}
         onPress={openZoom}
       >
-        <Ionicons name="add" size={20} color="#007AFF" style={styles.cornerTopLeft} />
-        <Ionicons name="add" size={20} color="#007AFF" style={styles.cornerTopRight} />
-        <Ionicons name="add" size={20} color="#007AFF" style={styles.cornerBottomLeft} />
-        <Ionicons name="add" size={20} color="#007AFF" style={styles.cornerBottomRight} />
 
         <View style={styles.imageCardInner}>
           <Image source={item.image} style={styles.image} />
