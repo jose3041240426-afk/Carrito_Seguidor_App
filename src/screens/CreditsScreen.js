@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, Image, Linking } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import FadeInView from '../components/FadeInView';
@@ -65,10 +65,13 @@ const CreditsScreen = ({ navigation }) => {
               <Text style={styles.contactText}>manuel_3041240406@utd.edu.mx</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={[styles.contactItem, { marginTop: 20, flexDirection: 'column' }]}>
+            <TouchableOpacity 
+              style={[styles.contactItem, { marginTop: 20, flexDirection: 'column' }]}
+              onPress={() => Linking.openURL('https://github.com/jose3041240426-afk/Carrito_Seguidor_App')}
+            >
               <Ionicons name="logo-github" size={26} color="#007AFF" />
               <Text style={[styles.contactText, { marginLeft: 0, marginTop: 5 }]}>
-                github.com/jose3041240426-afk/Carrito_Seguidor_App
+                Repositorio del Proyecto
               </Text>
             </TouchableOpacity>
           </View>
