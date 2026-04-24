@@ -231,7 +231,7 @@ const GalleryScreen = () => {
       )}
 
       <ScrollView
-        contentContainerStyle={[styles.scrollContent, isFullscreen && { padding: 0 }]}
+        contentContainerStyle={[styles.scrollContent, isFullscreen && { padding: 0, flexGrow: 1 }]}
         scrollEnabled={!isFullscreen}
       >
         {!isFullscreen && (
@@ -262,11 +262,12 @@ const GalleryScreen = () => {
           </>
         )}
 
-        <FadeInView delay={EVIDENCE.length * 150}>
+        <FadeInView delay={EVIDENCE.length * 150} style={isFullscreen && { flex: 1 }}>
           <View style={[
             styles.customPlayerContainer,
             isFullscreen && {
-              height: windowHeight,
+              flex: 1,
+              height: 'auto',
               marginTop: 0,
               marginBottom: 0,
               borderRadius: 0,
@@ -283,6 +284,7 @@ const GalleryScreen = () => {
                   resizeMode={isFullscreen ? "contain" : "cover"}
                   isLooping
                   shouldPlay={false}
+                  isMuted={true}
                   onPlaybackStatusUpdate={setStatus}
                 />
               </TouchableWithoutFeedback>
@@ -317,10 +319,6 @@ const GalleryScreen = () => {
                     <View style={styles.leftControls}>
                       <TouchableOpacity onPress={togglePlayPause} style={styles.controlBtn}>
                         <Ionicons name={status.isPlaying ? 'pause' : 'play'} size={22} color="#fff" />
-                      </TouchableOpacity>
-
-                      <TouchableOpacity onPress={toggleMute} style={styles.controlBtn}>
-                        <Ionicons name={status.isMuted ? 'volume-mute' : 'volume-high'} size={22} color="#fff" />
                       </TouchableOpacity>
                     </View>
 
